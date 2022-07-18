@@ -51,6 +51,7 @@ brew install --cask tripmode
 brew install --cask vlc
 brew install --cask zoom
 brew install --cask spectacle
+brew install --cask microsoft-remote-desktop
 
 # App Store
 # Install Microsoft To Do from the App Store
