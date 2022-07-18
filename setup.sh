@@ -52,6 +52,7 @@ brew install --cask vlc
 brew install --cask zoom
 brew install --cask spectacle
 brew install --cask microsoft-remote-desktop
+brew install --cask monitorcontrol
 
 # App Store
 # Install Microsoft To Do from the App Store
