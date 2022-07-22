@@ -33,7 +33,6 @@ brew install --cask miro
 brew install --cask figma
 brew install --cask teamviewer
 brew install --cask authy
-brew install --cask another-redis-desktop-manager
 brew install --cask copyclip
 brew install --cask webex-meetings
 brew install --cask webex
@@ -53,6 +52,10 @@ brew install --cask zoom
 brew install --cask spectacle
 brew install --cask microsoft-remote-desktop
 brew install --cask monitorcontrol
+brew install --cask another-redis-desktop-manager
+sudo spctl --master-disable
+sudo xattr -rd com.apple.quarantine /Applications/Another\ Redis\ Desktop\ Manager.app
+sudo spctl --master-enable
 
 # App Store
 # Install Microsoft To Do from the App Store
