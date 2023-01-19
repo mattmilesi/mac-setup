@@ -1,7 +1,29 @@
-# Brew
+# Brew #
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# Oh My ZSH #
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+# Powerlevel10k
+brew tap homebrew/cask-fonts
+brew install --cask font-hack-nerd-font
+# - Set the font in the terminal app
+brew install romkatv/powerlevel10k/powerlevel10k
+echo "source $(brew --prefix)/opt/powerlevel10k/powerlevel10k.zsh-theme" >>~/.zshrc
+
+# zsh-autosuggestions
+# - brew install zsh-autosuggestions ?
+
+# Colorls
+brew install ruby
+cd /opt/homebrew/Cellar/ruby/x.y.z/bin
+./gem install colorls
+ln -s /opt/homebrew/lib/ruby/gems/3.2.0/bin/colorls /usr/local/bin/colorls
+
+# Restart & configure
+exec zsh
 
 # Rosetta
 sudo softwareupdate --install-rosetta
